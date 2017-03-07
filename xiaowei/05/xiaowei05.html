@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin: 0;
+    }
+    /*******************header****************/
+    .wrapper {
+        width:100%;
+        margin: 0 auto;
+        padding:0 0px;
+        background: #dedede;
+        min-width: 826px;
+    }
+    .wrapper .header {
+        background: #333333;
+        width: 100%;
+        overflow: hidden;
+        padding:10px 0px;
+    }
+    .wrapper .header a.logo {
+        width:153px;
+        display: inline-block;
+        text-indent: -999em;
+        height: 40px;
+        background: url("logo.gif");
+
+    }
+    .wrapper .header ul {
+        width:282px;
+        height: 20px;
+        float: right;
+        font-size: 12px;
+        padding:10px 0px;
+    }
+    .wrapper .header ul li{
+       display: inline-block;
+        margin:0px 2px;
+        vertical-align:bottom;
+    }
+    .wrapper .header ul a.last {
+        color:gray;
+    }
+    .wrapper .header ul li a{
+        text-decoration: none;
+        color:white;
+    }
+    .main-content {
+        width: auto;
+        margin-right: 400px;
+    }
+    .art {
+        width: inherit;
+        background: white;
+        margin:18px;
+        border: 2px solid gray;
+        padding-left: 10px;
+        padding-top:40px;
+    }
+    /**********art-1*********/
+    .art-1 h3,.art-1 h4 {
+        color:gray;
+        margin:10px 0px;
+    }
+    .art-1 p {
+        text-indent: 2em;
+    }
+
+    .art-2 h3,.art-2 h4 {
+        color:gray;
+        margin:10px 0px;
+    }
+    .art-2 p {
+        text-indent: 2em;
+    }
+    .art-2 ul {
+        list-style: none;
+    }
+    .img-wrpper {
+        padding-left:60px;
+    }
+
+    .img p {
+        border: 1px solid gray;
+        text-align: center;
+        width: 124px;
+        margin:16px 0px;
+        float: left;
+        margin-left: 10px;
+    }
+    .img p span {
+        display: block;
+        margin: 10px auto;
+    }
+    .img p img {
+
+        margin-bottom: 10px;
+    }
+    .last-art {
+       /**width:auto**/
+        padding:22px;
+    }
+    .last-art h3,.last-art h4 {
+        color:gray;
+        margin:10px 0px;
+    }
+    .last-art ol {
+        list-style: none;
+        margin:10px 0px;
+    }
+    .last-art table {
+        width: 100%;
+        border: 2px solid gray;
+    }
+    .last-art table tr,.last-art table td,.last-art table th {
+        border: 1px solid gray;
+    }
+    .last-art table th {
+        background: black;
+        color: white;
+        text-align: left;
+    }
+    .last-art table tr {
+        text-align: left;
+    }
+    .last-art table tr:last-child {
+        background:#cccccc ;
+    }
+
+    .footer {
+        font-size: 10px;
+        text-align: left;
+        float:right;
+        width: 360px;
+        margin-right: 20px;
+    }
+
+    .footer form {
+        width: auto;
+        margin: 20px auto;
+    }
+    .footer form label {
+    }
+    .footer form input {
+        font-size: 10px;
+    }
+    .footer form table {
+        margin: 0 auto;
+    }
+    .footer form table td{
+        display: table-cell;
+        margin: 0px 0px;
+        padding:5px 0px;
+    }
+    .footer form table td:first-child {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .footer form table td input[type="checkbox"] {
+        margin: 0px 0px;
+    }
+    .footer button{
+        width: 100%;
+        background:#3355d0 ;
+        border-radius: 15px;
+        color: white;
+        padding: 10px ;
+    }
+    #brand {
+        width:100%;
+        background: black;
+        color: white;
+        text-align: center;
+        padding:20px 0px;
+    }
+    .clear {
+        overflow: hidden;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="header clear">
+            <a href="#" class="logo">百度</a>
+            <ul>
+                <li><a href="#">导航网站一</a></li>
+                <li><a href="#">导航网站二</a></li>
+                <li><a href="#">导航网站三</a></li>
+                <li class="last"><a href="#" class="last">导航网站四</a></li>
+            </ul>
+        </div>
+        <div class="art footer">
+            <h3>这里以后是一个侧栏 这是侧栏的标题</h3>
+            <form>
+                <table >
+                    <tr>
+                        <td>
+                            <label for="adress">请输入邮箱地址</label>
+                        </td>
+                        <td>
+                            <input type="text" id="adress" placeholder="这是一个文本输入框">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <p>邮箱地址请按要求输入</p>
+                        </td>
+                    </tr>
+                    <tr class="password">
+                        <td>
+                            <label for="password">请输入密码</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password"><br/>
+                        </td>
+                    <tr>
+                        <td>
+                            <label for="repassword">请重新输入密码</label>
+                        </td>
+                        <td>
+                            <input type="password" id="repassword">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <p>密码请为6-46位英文数字</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sex">性别</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sex" id="male">
+                            <label for="male">男</label>
+                            <input type="radio" name="sex" id="female">
+                            <label for="female">女</label><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>城市</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="Beijing" selected>北京</option>
+                                <option value="USA">美国</option>
+                                <option value="UK">英国</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>爱好</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="sport"><label for="sport">运动</label>
+                            <input type="checkbox" id="art"><label for="art">艺术</label>
+                            <input type="checkbox" id="science"><label for="science">科学</label>
+                        </td>
+                    <tr/>
+                    <tr>
+                        <td>
+                            <label>个人描述</label>
+                        </td>
+                        <td>
+                            <textarea cols="20" placeholder="输入您的个人描述"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+        <div class="main-content">
+            <div class="art-1 art">
+                <h2>文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <h4>文章作者 文章发表时间</h4>
+                <p>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,
+                    换行了<br/>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,换行了,<br/>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,<a href="http://ife.baidu.com">这里有一个链接连接到
+                    http://ife.baidu.com</a>  这是一个很长的段落,  <strong>这里有个粗体字</strong>这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,
+                    <img src="task1.png" style="display: block">
+                    这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,这是一个很长的段落,<br/>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,换行了,<br/>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,<a href="http://ife.baidu.com" target="_blank">这里有一个链接连接到
+                    http://ife.baidu.com</a>  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落。
+                </p>
+            </div>
+            <div class="art-2 art" >
+                <h2>另外文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <h4>文章作者 文章发表时间</h4>
+                <p>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,
+                    换行了<br/>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,换行了,<br/>
+                    这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,<a href="http://ife.baidu.com">这里有一个链接连接到
+                    http://ife.baidu.com</a>  这是一个很长的段落,  <strong>这里有个粗体字</strong>这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,  这是一个很长的段落,
+                    <img src="task1.png" style="display: block">
+                    <ul>
+                        <li>list1</li>
+                        <li>list2</li>
+                        <li>list3</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="img art clear">
+                <h2>图片</h2>
+                <div class="img-wrpper clear">
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                    <p>
+                        <span>好看的图片</span>
+                        <img src="task1.png" height="80px" width="100px">
+                    </p>
+                 </div>
+            </div>
+            <div class="art last-art">
+                <h2>最后一篇文章标题</h2>
+                <h3>文章二级标题</h3>
+                <h4>文章作者 文章发表时间</h4>
+                <ol>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <table>
+                    <caption>下面是一个表格，这里我给表哥加了一个border=“1”好让你看出是一个表格你们不用写html时候不要加</caption>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a> </td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a> </td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a> </td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a> </td>
+                    </tr>
+                    <tr>
+                        <td>总计</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="brand">
+            <p>版权所有&copy;</p>
+        </div>
+    </div>
+</body>
+</html>

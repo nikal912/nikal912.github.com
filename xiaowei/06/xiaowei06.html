@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+         * {
+             padding:0;
+             margin:0;
+         }
+         .clear {
+             overflow: hidden;
+         }
+         /*************hearder***********/
+        #wrapper {
+            width:980px;
+            margin: 0 auto;
+            text-align: center;
+            padding:0 44px;
+        }
+       #hearder {
+           width: auto;
+           background: white;
+           border-bottom: 2px solid gray;
+           overflow: hidden;
+           position: relative;
+       }
+         #hearder i {
+             float: left;
+             display: block;
+             height: 61px;
+             width: 110px;
+             background: url("sprite.png") no-repeat 0 0;
+         }
+         #hearder span{
+             color: #d45d5c;
+             font:12px "黑体";
+             position: absolute;
+             right:0;
+             bottom: 0;
+         }
+        /*****************************/
+
+        /**************mainbody***************/
+        #mainbody {
+            width:auto;
+            margin-top: 36px;
+            background: white;
+        }
+        /***********mainbody-top***********/
+         #mainbody .mainbody-top {
+             overflow: hidden;
+         }
+         #mainbody .mainbody-top .left-content {
+             float: left;
+         }
+         #mainbody .mainbody-top .left-content i {
+             background: url("sprite.png") no-repeat -999px -999px;
+             display: block;
+             height: 301px;
+             float: left;
+         }
+         #mainbody .mainbody-top .left-content i.cat1 {
+            width: 191px;
+            background-position: 0 -64px;
+        }
+         #mainbody .mainbody-top .left-content i.cat2 {
+             width: 260px;
+             background-position: -192px -64px;
+         }
+         #mainbody .mainbody-top .left-content i.cat3 {
+             width: 191px;
+             background-position: -451px -64px;
+         }
+         #mainbody .mainbody-top .right-col {
+             float: right;
+             border-top: 2px solid #cc8091;
+             padding-top:14px;
+             text-align: left;
+            position: relative;
+         }
+         #mainbody .mainbody-top .right-col a {
+             text-decoration: none;
+             font:24px "微软雅黑";
+             border-bottom: 2px solid gray;
+             color: #000000;
+         }
+         #mainbody .mainbody-top .right-col a:hover {
+             color:orange;
+         }
+         #mainbody .mainbody-top .right-col h4 {
+             font:12px "楷体";
+             color:black;
+             line-height: 10px;
+             margin-top: 10px;
+         }
+         #mainbody .mainbody-top .right-col p.big {
+             color:#75b86b;
+             font:116px "微软雅黑";
+             font-style: italic;
+
+         }
+         #mainbody .mainbody-top .right-col p span {
+
+         }
+         #mainbody .mainbody-top .right-col div.bottom {
+             font-family: "微软雅黑";
+             color:#cc8091;
+             overflow: hidden;
+         }
+         #mainbody .mainbody-top .right-col div.bottom strong {
+             font-size: 55px;
+             float: left;
+
+         }
+         #mainbody .mainbody-top .right-col div.bottom div {
+             float:left;
+             margin-top:17px;
+         }
+         #mainbody .mainbody-top .right-col div.bottom p.topp {
+             font-size:21px;
+
+         }
+         #mainbody .mainbody-top .right-col div.bottom p.bottom1 {
+             font-size:12px;
+         }
+        /******************/
+
+         /********mainbody-middle**********/
+        #mainbody .mainbody-middle {
+            overflow: hidden;
+            width: auto;
+
+            margin-top: 40px;
+        }
+         #mainbody .mainbody-middle div  {
+             float: left;
+             margin-right:26px;
+             font:12px "微软雅黑" ;
+             line-height: 16px;
+             text-align: left;
+         }
+         #mainbody .mainbody-middle .left {
+             width:228px;
+             height: 170px;
+
+         }
+         #mainbody .mainbody-middle .middle {
+             width:205px;
+             height: 170px;
+
+         }
+         #mainbody .mainbody-middle .right {
+             width: 152px;
+             height: 170px;
+
+         }
+         #mainbody .mainbody-middle div h1 {
+             font:16px bolder;
+             text-decoration: underline;
+         }
+         #mainbody .mainbody-middle div h1.cat-1 {
+           color: #418c59;
+         }
+         #mainbody .mainbody-middle div h1.cat-2{
+            color:#d2994f;
+         }
+         #mainbody .mainbody-middle div h1.cat-3{
+             color:#cc7680;
+         }
+         #mainbody .mainbody-middle div ul {
+             list-style: none;
+             margin-top: 20px;
+         }
+         #mainbody .mainbody-middle div ul span{
+            color:#cc7680;
+             font-size:12px;
+         }
+         /******************/
+
+         /*********mainbody-bottom*********/
+         #mainbody .mainbody-bottom{
+            width:auto;
+             overflow: hidden;
+
+         }
+         #mainbody .mainbody-bottom .left {
+             float: left;
+             width: 415px;
+             text-align: left;
+         }
+         #mainbody .mainbody-bottom .right {
+             float: right;
+             width:458px;
+             margin-left: 20px;
+         }
+         #mainbody .mainbody-bottom .left h1 {
+             font:42px bold;
+             color: #11456b;
+         }
+         #mainbody .mainbody-bottom .left h1 .letter {
+             font-size:72px;
+             color: #f5e327;
+             font-style: italic;
+             font-family: "黑体";
+         }
+         #mainbody .mainbody-bottom .left h2 {
+             font:33px "黑体";
+             font-weight: bold;
+             color:#11456b;
+             padding-bottom: 16px;
+             border-bottom: 2px solid #11456b;
+         }
+         #mainbody .mainbody-bottom .left p span {
+             font:70px "微软雅黑";
+             color:#f5e327;
+         }
+         #mainbody .mainbody-bottom .left p img {
+             float: right;
+             margin: 5px;
+         }
+         #mainbody .mainbody-bottom .right {
+             padding-top:20px;
+             text-align: left;
+             position: relative;
+
+         }
+         #mainbody .mainbody-bottom .right div.img {
+             height: 257px;
+             width:457px;
+             background: url("img/middle-rigjt.gif") no-repeat;
+             position: relative;
+             overflow: hidden;
+         }
+         #mainbody .mainbody-bottom .right div p {
+             position: absolute;
+             left:53px;
+             bottom:13px;
+             font:12px/1.4  "微软雅黑" ;
+             font-style: italic;
+             color:#72b16a;
+         }
+         #mainbody .mainbody-bottom .right div p .first {
+             color: white;
+             font-size: 26px;
+             font-style: normal;
+         }
+         #mainbody .mainbody-bottom .right .under-img {
+             background: #eeedd6;
+             margin-top: 32px;
+             overflow: hidden;
+         }
+         #mainbody .mainbody-bottom .right .under-img ul {
+            list-style: none;
+             margin:30px;
+         }
+         #mainbody .mainbody-bottom .right .under-img ul li {
+             padding-left: 12px;
+             background: url("img/list-logo.gif") no-repeat 0 75%;
+             margin-top: 23px;
+         }
+         #mainbody .mainbody-bottom .right  .under-img .bottom .bottom-left{
+             width: 260px;
+             height: 158px;
+             background: url("img/bot-right.gif") no-repeat ;
+             overflow: hidden;
+             float: left;
+             position: relative;
+         }
+         #mainbody .mainbody-bottom .right  .under-img .bottom .bottom-left span {
+             font:110px "微软雅黑" ;
+             color: white;
+             float: left;
+             margin-left: 13px;
+             margin-top:6px;
+             padding-right: 2px;
+         }
+         #mainbody .mainbody-bottom .right  .under-img .bottom .bottom-left p {
+             position: absolute;
+             left:80px;
+             top:38px;
+         }
+         #mainbody .mainbody-bottom .right  .under-img .bottom .bottom-left p:first-child {
+             color:#ffffff;
+             font:21px "黑体";
+             font-style: italic;
+             line-height: 1;
+
+         }
+         #mainbody .mainbody-bottom .right  .under-img .bottom .bottom-right {
+             float: right;
+             width:190px;
+             height: 160px;
+
+             text-indent: 2em;
+         }
+         #mainbody .mainbody-bottom .right  .under-img .bottom .bottom-left p span {
+             font-size:12px;
+         }
+        .footer {
+            margin-top: 40px;
+            width: auto;
+            border-top: 1px solid gray;
+            height: 58px;
+            background: white;
+            position: relative;
+        }
+         .footer span {
+             position: absolute;
+             color:#d45d5c;
+             font:12px "黑体";
+             top:0;
+             right: 0;
+          }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="hearder">
+        <i></i>
+        <span>2016.03</span>
+    </div>
+    <div id="mainbody">
+        <div class="mainbody-top">
+            <div class="left-content">
+                <i class="cat1"></i>
+                <i class="cat2"></i>
+                <i class="cat3"></i>
+            </div>
+            <div class="right-col">
+                <a href="#">About<br/>TECHNOLOGY</a>
+                <h4>AboutTECHNOLOGYAboutTECHNOLOGYTECHNOLOGY<br>AboutTECHNOLOGY</h4>
+                <p class="big"><span>700</span></p>
+                <div class="bottom">
+                    <strong>3.2</strong>
+                    <div >
+                        <p class="topp">css</p>
+                        <p class="bottom1">csscsscss</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainbody-middle">
+            <div class="left">
+                <h1 class="cat-1">What</h1>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前
+                    前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端</p>
+            </div>
+            <div class="middle">
+                <h1 class="cat-2">When</h1>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前
+                    前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端
+                </p>
+            </div>
+            <div class="right">
+                <h1 class="cat-3">How</h1>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端</p>
+                <ul>
+                    <li>what------<span>40%</span></li>
+                    <li>what------<span>30%</span></li>
+                    <li>what------<span>30%</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainbody-bottom">
+            <div class="left">
+                <h1><span class="letter">THE</span> TECHNOLOGE <br/>OF FRONT</h1>
+                <h2>前端技术领域</h2>
+                <p><span>前</span>端前端前端前端
+                    前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端
+                    前端前端前端前端前端前端<img src="img/bot-float.gif">
+                    前端前端前端前端前端前端前端端前端前端前端
+                    前端前端前端前前端前端前端前前端前端前端前前端前端前端前
+                    前端前端前端前端前端前端前端端前端前端前端
+                    前端前端前端前前端前端前端前前端前端前端前
+                    前端前端前端前端前端前端前端端前端前端前端
+                    前端前端前端前前端前端前端前v端前端前端前端v
+                    前端前端前端前前端前端前端前端前端前端前端端前端前端前端
+                    前端前端前端前端前端前端前端端前端前端前端端前端前端前端前端前端端前端前端前端
+                    端前端前端端前端前端前端前端端前端前端前端
+                    端前端前端前端端前端前端前端
+                    端前端前端前端端前端前端前端端前端
+                    前端前端前端前端前端前端前端端前端前端前端端前端前端前端
+                </p>
+            </div>
+            <div class="right">
+                <div class="img">
+                    <p class="words">
+                        <span class="first">前端技术</span><span class="second">前端技术</span>
+                    </p>
+                </div>
+                <div class="under-img">
+                    <ul>
+                        <li>前端前端前端前端前端前端前端--------------前端</li>
+                        <li>前端前端前端前端---------------前端</li>
+                        <li>前端前端前端前端前端前端前端--------------前端</li>
+                    </ul>
+                    <div class="bottom">
+                            <div class="bottom-left">
+                                <span>0</span>
+                                <div class="one">
+                                    <p>ONE TWO <br/>
+                                    THREE FORE FIVE
+                                        <span>
+                                            hello world hello world<br/> hello world
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bottom-right">
+                                <span>hello worldhello world
+                                    hello world
+                                    hello world
+                                    hello world
+                                    hello worldhello world
+                                    hello world
+                                 </span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span>ife.baidu.com</span>
+        </div>
+    </div>
+</div>
+</html>
